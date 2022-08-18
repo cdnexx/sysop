@@ -4,17 +4,30 @@
     </head>
     <body>
         <script>
-           function playMusic(){
-            var music = new Audio('src/spike.mp3');
+           function playPlant(){
+            var music = new Audio('src/plant.mp3');
+            music.volume = 1;
             music.play();
-            } 
+            }
+            function playDefuse() {
+                var music = new Audio('src/defuse.mp3');
+                music.volume = 1;
+                music.play(); 
+            }
+            function playAce() {
+                var music = new Audio('src/ace.mp3');
+                music.volume = 0.3;
+                music.play(); 
+            }
         </script>
         <h1>Hola Mundo!</h1>
         <h2>Hello World!</h2>
         <h3>Salut Monde!</h3>
         <img src="https://loremflickr.com/640/360" width="640" heigth="360" alt="picture">
         <div>
-            <input type="button" value="sound" onclick="playMusic()" />
+            <input type="button" value="Plant" onclick="playPlant()" />
+            <input type="button" value="Defuse" onclick="playDefuse()" />
+            <input type="button" value="Ace" onclick="playAce()" />
         </div>
         <footer>&copy; Todos los derechos reservados.</footer>
     </body>
