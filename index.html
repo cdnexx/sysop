@@ -3,10 +3,19 @@
         <title>Franco Osorio</title>
     </head>
     <body>
+        <script>
+           function playMusic(){
+            var music = new Audio('src/spike.mp3');
+            music.play();
+            } 
+        </script>
         <h1>Hola Mundo!</h1>
         <h2>Hello World!</h2>
         <h3>Salut Monde!</h3>
         <img src="https://loremflickr.com/640/360" width="640" heigth="360" alt="picture">
+        <div>
+            <input type="button" value="sound" onclick="playMusic()" />
+        </div>
         <footer>&copy; Todos los derechos reservados.</footer>
     </body>
 </html>
