@@ -1,0 +1,75 @@
+:root{
+   --main-bg-color: #ececec;
+   --sec-bg-color: #90ccf4;
+   --text-color: black;
+   --main-accent: black;
+   --sec-accent: #f3d250;
+}
+
+/* :root{
+    --main-bg-color: #f0ebf4;
+    --sec-bg-color: #a1c3d1;
+    --text-color: #f172a1; 
+    --main-accent: #e64398;
+    --sec-accent: #b39bc8;   
+} */
+
+html {
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    color: var(--main-accent);
+}
+
+body {
+    background-color: var(--main-bg-color);
+    
+}
+
+header{
+    background-color: var(--sec-bg-color);
+}
+
+.container {
+    text-align: center;
+    width: 50%;
+    max-width: 620px;
+    min-width: 300px;
+    margin: 0 auto;
+    background-color: var(--sec-bg-color);
+    box-shadow: 5px 5px 5px rgb(151, 151, 151);
+    border-radius: 7px;
+    /* border: 2px solid magenta; */
+}
+
+#result{
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgb(151, 151, 151);
+    background-color: var(--sec-accent);
+    
+}
+
+a {
+    color: var(--main-accent);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--sec-accent);
+}
+
+table,th{
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.nota, .pond{
+    width: 25%;
+}
+
+.ui_button{
+    margin-left: 50%;
+}
+

@@ -1,29 +1,41 @@
 <html>
     <head>
         <title>Franco Osorio</title>
+        <link rel="stylesheet" href="src/style/style.css">
     </head>
     <body>
-        <script>
-           function playPlant(){
-            var music = new Audio('src/plant.mp3');
-            music.volume = 1;
-            music.play();
-            }
-            function playDefuse() {
-                var music = new Audio('src/defuse.mp3');
-                music.volume = 1;
-                music.play(); 
-            }
-            function playAce() {
-                var music = new Audio('src/ace.mp3');
-                music.volume = 0.3;
-                music.play(); 
-            }
-        </script>
-        <h1>Hola Mundo!</h1>
-        <h2>Hello World!</h2>
-        <h3>Salut Monde!</h3>
-        <img src="https://loremflickr.com/640/360" width="640" heigth="360" alt="picture">
+        <script src="src/script/index.js"></script>
+        <header>
+            <h1><a href="./index.html">Ponderify</a></h1>
+            <a href="https://www.instagram.com/furan.ko/" target="_blank">Contacto</a>
+        </header>
+        <div class="container">
+            <h2>Ponderación de notas</h2>
+            <table>
+                <tr>
+                    <th><input class="nota" type="number" id="nota_1"></th>
+                    <th><input class="pond" type="number" id="pond_1" value=30>%</th>
+                </tr>
+                <tr>
+                    <th><input class="nota" type="number" id="nota_2"></th>
+                    <th><input class="pond" type="number" id="pond_2" value=30>%</th>
+                </tr>
+                <tr>
+                    <th><input class="nota" type="number" id="nota_3"></th>
+                    <th><input class="pond" type="number" id="pond_3" value=30>%</th>
+                </tr>  
+                <tr>
+                    <th><input class="nota" type="number" id="nota_4"></th>
+                    <th><input class="pond" type="number" id="pond_4" value=10>%</th>
+                </tr>              
+            </table>
+            <div class="ui_button">
+                <input type="button" value="Agregar">
+                <input type="button" value="Calcular" onClick="calcularPonderado()">
+            </div>
+            <div id="result"></div>
+        </div>
+
         <div>
             <input type="button" value="Plant" onclick="playPlant()" />
             <input type="button" value="Defuse" onclick="playDefuse()" />
